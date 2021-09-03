@@ -1,0 +1,15 @@
+syntax="proto3";
+option java_multiple_files=true;
+option java_package="com.grpc.model";
+
+message Car{
+  string name =1;
+  int32 model=2;
+  string company=3;
+}
+
+message Detail{
+  string name=1;
+  repeated Car car=2;
+  int32 age =3;
+}

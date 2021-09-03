@@ -1,0 +1,11 @@
+syntax="proto3";
+package common;
+
+option java_multiple_files=true;
+option java_package="com.grpc.model";
+import "common/House.proto";
+
+message Apartment{
+  string name=1;
+  repeated common.House house=2;
+}
